@@ -265,43 +265,9 @@ function initSmoothScroll() {
     });
 }
 
-// 表单处理
+// 表单处理（目前无表单）
 function initForm() {
-    const form = document.getElementById('betaForm');
-    const successMessage = document.getElementById('formSuccess');
-    
-    if (!form) return;
-    
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const email = form.querySelector('input[type="email"]').value;
-        
-        // 模拟提交
-        const button = form.querySelector('button');
-        const originalText = button.textContent;
-        button.textContent = '提交中...';
-        button.disabled = true;
-        
-        setTimeout(() => {
-            // 显示成功消息
-            form.style.display = 'none';
-            successMessage.classList.remove('hidden');
-            
-            // 重置表单
-            form.reset();
-            button.textContent = originalText;
-            button.disabled = false;
-            
-            // 3秒后恢复表单
-            setTimeout(() => {
-                form.style.display = 'block';
-                successMessage.classList.add('hidden');
-            }, 3000);
-            
-            console.log('Beta signup:', email);
-        }, 1000);
-    });
+    // 下载码验证逻辑已移至 HTML 中的内联脚本
 }
 
 // 滚动动画
