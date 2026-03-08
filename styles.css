@@ -35,9 +35,8 @@ body {
 }
 
 #navbar.scrolled {
-    background: rgba(11, 16, 38, 0.9);
+    background: rgba(11, 16, 38, 0.95);
     backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 /* 渐变文字 */
